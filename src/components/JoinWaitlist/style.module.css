@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('/images/JoinWaitlist.png'); 
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.formContainer {
+  padding: 40px;
+  border-radius: 8px;
+  width: 400px; 
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 48px; 
+  font-weight: 400;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; 
+}
+
+.input,
+.select {
+  border: none;
+  border-bottom: 2px solid #aaa; 
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px; 
+  outline: none; 
+  background: transparent;
+  color: white;
+}
+
+.input::placeholder,
+.select::placeholder {
+  color: #aaa; 
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 50px;
+  font-size: 1rem; 
+  margin-top: 20px;
+  width: 150px; 
+}
+
+.button:hover {
+  scale: 1.05; 
+}
+
+@media (max-width: 768px) {
+  .container{
+    background-image: url('/images/JoinWaitlistMobile.png'); 
+    height: 100vh; 
+  }
+
+  .formContainer {
+    width: 90%; 
+    padding: 20px; 
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .input,
+  .select {
+    font-size: 14px; 
+  }
+
+  .button {
+    width: 100%; 
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    background-image: url('/images/JoinWaitlistMobile.png'); 
+    height: 100vh; 
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .input,
+  .select {
+    font-size: 12px; 
+  }
+
+  .button {
+    padding: 0.8em 1.5em; 
+    font-size: 0.8rem; 
+  }
+}

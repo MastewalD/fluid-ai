@@ -1,0 +1,113 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer {
+    position: sticky;
+    top: 0;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    width: auto; 
+    height: 100%; 
+    max-width: 100%; 
+}
+
+.textContainer {
+    position: relative;
+}
+
+.textSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.text {
+    width: 20%;
+    padding: 20px;
+    color: white;
+}
+
+.text h1 {
+    font-size: 24px; 
+}
+
+.text p {
+    font-size: 14px; 
+}
+
+.left {
+    text-align: right;
+    padding-left: 700px; 
+}
+
+.right {
+    text-align: left;
+    padding-right: 700px; 
+}
+
+.projectList {
+    margin-top: 20px;
+}
+
+.projectEl {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 45%; 
+        padding: 10px; 
+    }
+
+    .left, .right {
+        padding-left: 20px; 
+        padding-right: 20px; 
+        text-align: center; 
+    }
+
+    .textSection {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .text h1 {
+        font-size: 20px; 
+    }
+
+    .text p {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        width: 100%;
+    }
+
+    .left, .right {
+        padding: 0; 
+    }
+
+    .text h1 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 10px;
+    }
+
+    .imageContainer {
+        height: 100vh; 
+    }
+}
